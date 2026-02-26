@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Recognition & Rating System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>StyleRate</h1>
+            <p>Recognize, Rate & Get Better Style Suggestions</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Image Upload Section -->
+            <section class="upload-section">
+                <h2>Step 1: Upload or Capture Photo</h2>
+                
+                <div class="upload-area" id="uploadArea">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                    </svg>
+                    <p>Drag & drop your image here or click to select</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+
+                <div class="button-group">
+                    <button id="uploadBtn" class="btn btn-primary">Choose Image</button>
+                    <button id="cameraBtn" class="btn btn-secondary">Take Photo</button>
+                </div>
+
+                <!-- Hidden Camera Input -->
+                <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
+            </section>
+
+            <!-- Recognition & Rating Section -->
+            <section class="recognition-section">
+                <div class="recognition-panel">
+                    <h2>Step 2: Recognition & Rating</h2>
+                    
+                    <div id="previewContainer" class="preview-container hidden">
+                        <img id="previewImage" src="/placeholder.svg" alt="Uploaded image">
+                        <button id="clearImageBtn" class="btn-clear">Clear</button>
+                    </div>
+
+                    <div id="recognitionResult" class="recognition-result hidden">
+                        <h3>Recognized Item</h3>
+                        <div id="recognizedItem" class="recognized-item">
+                            <p id="itemName" class="item-name">--</p>
+                            <p id="itemCategory" class="item-category">--</p>
+                            <p id="itemMatch" class="item-match">Match: --</p>
+                        </div>
+
+                        <!-- Add look rating display section -->
+                        <div id="lookRatingContainer" class="look-rating-container hidden"></div>
+
+                        <!-- Star Rating -->
+                        <div class="rating-container">
+                            <h3>Rate This Item</h3>
+                            <div class="star-rating" id="starRating">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <p id="ratingText" class="rating-text">Select a rating</p>
+                            <button id="submitRatingBtn" class="btn btn-primary" disabled>Submit Rating</button>
+                        </div>
+                    </div>
+
+                    <div id="loadingSpinner" class="loading-spinner hidden">
+                        <div class="spinner"></div>
+                        <p>Recognizing your clothing...</p>
+                    </div>
+                </div>
+
+                <!-- Suggestions Section -->
+                <div class="suggestions-panel">
+                    <h2>Step 3: Get Suggestions</h2>
+                    <div id="suggestionsContainer" class="suggestions-container">
+                        <p class="empty-message">Rate some items to get personalized suggestions</p>
+                    </div>
+                    <div id="ratedHistory" class="rated-history">
+                        <h3>Your Rated Items</h3>
+                        <div id="historyList" class="history-list">
+                            <p class="empty-message">No items rated yet</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

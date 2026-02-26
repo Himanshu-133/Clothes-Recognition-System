@@ -1,0 +1,19 @@
+{
+  "items": [
+    {"id": 1, "name": "Formal Blazer", "category": "formal", "color": "black", "style": "business", "season": "all"},
+    {"id": 2, "name": "Dress Shirt", "category": "formal", "color": "white", "style": "business", "season": "all"},
+    {"id": 3, "name": "Business Trousers", "category": "formal", "color": "black", "style": "business", "season": "all"},
+    {"id": 4, "name": "Casual T-Shirt", "category": "casual", "color": "blue", "style": "relaxed", "season": "summer"},
+    {"id": 5, "name": "Denim Jeans", "category": "casual", "color": "blue", "style": "relaxed", "season": "all"},
+    {"id": 6, "name": "Polo Shirt", "category": "casual", "color": "green", "style": "smart-casual", "season": "summer"},
+    {"id": 7, "name": "Hoodie", "category": "casual", "color": "gray", "style": "relaxed", "season": "winter"},
+    {"id": 8, "name": "Sneakers", "category": "casual", "color": "white", "style": "sporty", "season": "all"},
+    {"id": 9, "name": "Athletic Shorts", "category": "sport", "color": "black", "style": "sporty", "season": "summer"},
+    {"id": 10, "name": "Running Shoes", "category": "sport", "color": "red", "style": "sporty", "season": "all"},
+    {"id": 11, "name": "Gym T-Shirt", "category": "sport", "color": "blue", "style": "sporty", "season": "summer"},
+    {"id": 12, "name": "Vintage Leather Jacket", "category": "vintage", "color": "brown", "style": "edgy", "season": "fall"},
+    {"id": 13, "name": "Classic Sweater", "category": "elegant", "color": "cream", "style": "sophisticated", "season": "winter"},
+    {"id": 14, "name": "Elegant Dress", "category": "elegant", "color": "black", "style": "sophisticated", "season": "all"},
+    {"id": 15, "name": "Silk Scarf", "category": "elegant", "color": "purple", "style": "sophisticated", "season": "all"}
+  ]
+}
