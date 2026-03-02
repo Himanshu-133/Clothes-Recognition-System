@@ -48,7 +48,7 @@ Highest probability label is chosen as prediction
 
 ▶️ How to Run
 1️⃣ Clone the Repository
-git clone https://github.com/YourUsername/Clothes-Recognition-System.git
+git clone https://github.com/Himanshu-133/Clothes-Recognition-System.git
 cd Clothes-Recognition-System
 2️⃣ Install Dependencies
 pip install -r requirements.txt
