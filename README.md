@@ -1,50 +1,50 @@
 👕 Clothes Recognition System
 
-A deep learning–based system to automatically identify and classify clothing items from images. This project uses convolutional neural networks (CNNs) to detect various apparel categories such as shirts, pants, dresses, and more with high accuracy.
+A deep learning–based system to automatically identify and classify clothing items from images. The aim of this project is to achieve high accuracy of detection of various apparel categories like shirts, pants, dresses and others using CNN.
 
 🚀 Features
 
-📷 Image upload for clothing classification
+Upload images of clothing for classification.
 
-🧠 Trained deep learning model (CNN)
+The trained deep learning model (CNN) is used to determine the object's identity.
 
 🏷️ Multi-category predictions (e.g., shirts, pants, shoes)
 
-📊 Performance metrics and visualization
+Visualizing and interpreting performance metrics.Data visualization and interpretation of performance data.
 
-🧪 Easy to extend for custom datasets
+Easy to add to for custom datasets
 
 🛠️ Technologies Used
 
 Python – Main programming language
 
-TensorFlow / Keras – Deep learning framework
+TensorFlow / Keras is a deep learning framework.
 
 OpenCV – Image preprocessing
 
 NumPy & Pandas – Data handling
 
-Matplotlib / Seaborn – Visualizing results
+Use Matplotlib / Seaborn to visualize results.
 
-Flask / Streamlit (optional) – For browser-based UI
+Flask / Streamlit (optional) – Browser based UI
 
 📂 Project Structure
-dataset/                # Images labeled by clothing category  
+dataset/ by clothing category labeled images.  
 models/                 # Saved trained model files  
 train.py                # Script to train the model  
-predict.py              # Script to classify new images  
+Make sure to have internet access.Ensure you have internet connection.  
 app.py                  # Web app for interactive demo (optional)  
 requirements.txt        # Python dependencies  
 README.md               # Project documentation  
 🧠 Model Overview
 
-Trained a convolutional neural network (CNN) on a labeled clothing dataset
+Improved a Convolutional Neural Network (CNN) trained on a labeled clothing dataset
 
-Images are preprocessed (resized, normalized) before training
+Images are preprocessed (Resized, Normalized) before training.
 
-Model outputs a probability for each clothing category
+Model categorizes a probability for each clothing category
 
-Highest probability label is chosen as prediction
+The prediction is the label which is most likely to appear.
 
 ▶️ How to Run
 1️⃣ Clone the Repository
@@ -55,16 +55,16 @@ pip install -r requirements.txt
 3️⃣ Train the Model
 python train.py
 4️⃣ Run Prediction
-python predict.py --image path/to/image.jpg
-5️⃣ (Optional) Start Web App
+To run the network, use the predict.py script as follows:Run the network with the predict.py script:
+The 5️⃣ option is available if you wish to launch a web app.
 python app.py
 📈 Results & Evaluation
 
-After training, the model outputs accuracy, loss curves, and classification reports. Visualizations help understand model performance across clothing categories.
+The model produces the classification report, loss curves and accuracy after the training. Some visualisations are used as a means of understanding the model's performance on a clothing type-by-clothing type basis.
 
 💡 Use Cases
 
-E-commerce product tagging and classification
+Product tagging and classification for ecommerce websites.
 
 Smart wardrobe apps
 
@@ -76,8 +76,8 @@ Inventory categorization
 
 Real-time webcam detection
 
-Support for more clothing categories
+Implementing support for additional types of clothing
 
-Integration with smartphone apps
+Integrating with the smartphone apps.Integrating with the smartphone apps.
 
 Cloud deployment (AWS/GCP/Heroku)
